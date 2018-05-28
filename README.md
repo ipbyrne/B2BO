@@ -19,7 +19,7 @@ Now that we have our trigger lines and slice the data into tradable windows. In 
 
 ![alt text](https://github.com/ipbyrne/B2BO/blob/master/images/B2BO-formation.PNG?raw=true "Example of Oppurtunities")
 
-During each oppurtunity, we measure how high the price travels above (or below for shorts) are stop loss. We then record the max distance.
+During each oppurtunity, we measure how high the price travels above (or below for shorts) are stop loss. This distance will be referred to as the spread. We then record the max distance.
 
 ### Drawing Target Bands
 We then take our distance frequency data and find the 50% cut off distance, the 75% cut off distance, and the 87.5% cut off distance. This effectively forms there 3 levels, where when the level below is reached, it is 50/50 the spread will widen to the level above or go back to our SL.
@@ -27,4 +27,13 @@ We then take our distance frequency data and find the 50% cut off distance, the 
 We then get the pip value of these levels and draw the bands x amount of pips below/above our SL to form our targets.
 
 ![alt text](https://github.com/ipbyrne/B2BO/blob/master/images/B2BO-bands-added.PNG?raw=true "Price with MA Envelopes")
+
+The orange line represents the 50% cut off. The blue line represents the 75% cut off, and the red line represents the 87.5% cut off.
+Once a new oppurutnity forms, there is a 50/50 chance the spread will widen to reach the orange band.
+Once the spread reaches the 50% cut off, it is now 50/50 it will widen to the blue line. If/when the spread widens to the blue line, it is now 50/50 it will widen to the red line.
+
+## Current Issues/Complaints
+Coming Soon...
+
+
 
